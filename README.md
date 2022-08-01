@@ -33,7 +33,9 @@ vi /etc/openvpn/server/server.conf
 `
 find / -iname server.conf
 `
-##### Disable below option for the default route  #####
+### Server Configuration File Defaults ###
+You can adjust and change some of the default changes, otherwise your VPN clients will have the OpenVPN as their Default Gateway
+###### To Disable Default Route, you need add hash (#) infront of below line push....  and other settings e.g. duplicate-cn is for clients to use single config file., and plugin auth-pam iso for users authentication against Ubuntu local users database ######
 ```
 #push "redirect-gateway def1 bypass-dhcp" <br>
 ##Add below static route <br>

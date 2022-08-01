@@ -22,9 +22,9 @@ cd  /etc/openvpn/server/
 cp /root/client.ovpn /etc/openvpn/server/
 ```
 
-##### Configure OpenVPN:##### 
+##### Configure OpenVPN: ##### 
 
-Now Edit the file 
+Now Edit the server config file 
 
 `
 vi /etc/openvpn/server/server.conf

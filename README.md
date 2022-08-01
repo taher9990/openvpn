@@ -44,11 +44,8 @@ duplicate-cn
 ##To find the path inside the server use this command dpkg -L openvpn | grep pam
 plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so login
 ```
-----------------------
 
-`
-/etc/openvpn/server/server.conf
-`
+
 ##### On client Config file add below option ##### 
 ` auth-user-pass `
 ##### Also disable this option: #####

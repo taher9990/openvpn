@@ -29,8 +29,8 @@ Now Edit the file
 `
 vi /etc/openvpn/server/server.conf
 `
-`
 
+`
 find / -name server.conf
 `
 ##### Disable below option for the default route  #####

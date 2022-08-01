@@ -29,6 +29,9 @@ Now Edit the file
 `
 vi /etc/openvpn/server/server.conf
 `
+`
+find / -name server.conf
+`
 ##### Disable below option for the default route  #####
 ```
 #push "redirect-gateway def1 bypass-dhcp" <br>

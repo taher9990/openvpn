@@ -54,7 +54,7 @@ plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so logi
 
 
 
-#### Design Notes ####
+### Design Notes ###
 In case you have other networks and vms/servers that behind/not directly connected to OpenVPN as default GW, you would need to choose one of the below options to make the VPN clients reach to them and vice versa:
 ##### 1- Deploye OpenVPN in One Arm Mode: #####
 This will require you to ceate NAT Rules on OpenVPN VPN to change VPN Clients source IPs to your local other networks which are behind the OpenVPN VM.

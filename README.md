@@ -75,6 +75,12 @@ Then search by the process Id
 ps -aux | grep 1148
 You will find the daemon "--daemon"  then look for " --cd" to see where is the path"
 ```
+#### Or to make usre the exact path for server.conf####
+```
+You can still use find 
+find / -iname server.conf
+or via the process id explaind above
+```
 #### Check Network Port 1194 UDP is default ####
 ```
 netstat -tupln

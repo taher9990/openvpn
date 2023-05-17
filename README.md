@@ -80,6 +80,9 @@ You will find the daemon "--daemon"  then look for " --cd" to see where is the p
 You can still use find 
 find / -iname server.conf
 or via the process id explaind above
+
+Default is /etc/openvpn/server/server.conf
+Unless mentioned in the ps id  "cd" path section
 ```
 #### Check Network Port 1194 UDP is default ####
 ```

@@ -53,16 +53,19 @@ plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so logi
 ##### Also disable this option: #####
 ` block-outside-dns `
 
-`systemctl enable openvpn-server@server.service`
-`systemctl status openvpn-server@server.service`
-`#systemctl start openvpn-server@server.service`
-`#systemctl restart openvpn-server@server.service`
-`
+```
+systemctl enable openvpn-server@server.service
+systemctl status openvpn-server@server.service
+#systemctl start openvpn-server@server.service
+#systemctl restart openvpn-server@server.service
+```
 #### Or ####
-`sudo systemctl stop openvpn@server`
-`sudo systemctl start openvpn@server`
-`sudo systemctl restart openvpn@server`
-`sudo systemctl status openvpn@server`
+```
+sudo systemctl stop openvpn@server
+sudo systemctl start openvpn@server
+sudo systemctl restart openvpn@server
+sudo systemctl status openvpn@server
+```
 
 
 ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) 

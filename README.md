@@ -68,6 +68,13 @@ sudo systemctl start openvpn@server
 sudo systemctl restart openvpn@server
 sudo systemctl status openvpn@server
 ```
+#### To know which command should be used, you need to know the service daemon location####
+```
+netstat -tupln | grep openvpn
+Then search by the process Id
+ps -aux | grep 1148
+You will find the daemon "--daemon"  then look for " --cd" to see where is the path"
+```
 #### Check Network Port 1194 UDP is default ####
 ```
 netstat -tupln

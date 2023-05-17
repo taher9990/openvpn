@@ -64,10 +64,6 @@ plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so logi
 `sudo systemctl restart openvpn@server`
 `sudo systemctl status openvpn@server`
 
-![image](https://github.com/taher9990/openvpn/assets/3184045/833ee409-82d8-4dc3-9e84-920281858f49)
-
-
-![image](https://github.com/taher9990/openvpn/assets/3184045/f9c9015f-354c-4f93-98a9-c2174c46954b)
 
 ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) 
 ### Design Notes ### 

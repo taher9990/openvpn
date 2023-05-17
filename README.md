@@ -53,12 +53,19 @@ plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so logi
 ##### Also disable this option: #####
 ` block-outside-dns `
 
-```
-systemctl enable openvpn-server@server.service
-systemctl status openvpn-server@server.service
-#systemctl start openvpn-server@server.service
-#systemctl restart openvpn-server@server.service
-```
+`systemctl enable openvpn-server@server.service`
+`systemctl status openvpn-server@server.service`
+`#systemctl start openvpn-server@server.service`
+`#systemctl restart openvpn-server@server.service`
+`
+#### Or ####
+`sudo systemctl stop openvpn@server`
+`sudo systemctl start openvpn@server`
+`sudo systemctl restart openvpn@server`
+`sudo systemctl status openvpn@server`
+
+![image](https://github.com/taher9990/openvpn/assets/3184045/833ee409-82d8-4dc3-9e84-920281858f49)
+
 
 ![image](https://github.com/taher9990/openvpn/assets/3184045/f9c9015f-354c-4f93-98a9-c2174c46954b)
 

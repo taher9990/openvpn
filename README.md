@@ -66,7 +66,10 @@ sudo systemctl start openvpn@server
 sudo systemctl restart openvpn@server
 sudo systemctl status openvpn@server
 ```
-
+#### Check Network Port 1194 UDP is default ####
+```
+netstat -tupln
+```
 
 ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) 
 ### Design Notes ### 

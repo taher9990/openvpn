@@ -53,6 +53,15 @@ plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so logi
 ##### Also disable this option: #####
 ` block-outside-dns `
 
+```
+systemctl enable openvpn-server@server.service
+systemctl status openvpn-server@server.service
+#systemctl start openvpn-server@server.service
+#systemctl restart openvpn-server@server.service
+```
+
+![image](https://github.com/taher9990/openvpn/assets/3184045/f9c9015f-354c-4f93-98a9-c2174c46954b)
+
 ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) ![#1589F0](https://via.placeholder.com/15/1589F0/1589F0.png) 
 ### Design Notes ### 
 In case you have other networks and vms/servers that behind/not directly connected to OpenVPN as default GW, you would need to choose one of the below options to make the VPN clients reach to them and vice versa:

@@ -47,13 +47,17 @@ duplicate-cn
 plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so login
 ```
 
+##### To avoid DNS resolutions issues#####
+#####On Server Config file Add below options#####
+`push "dhcp-option DNS 1.1.1.1"`
+`push "block-outside-dns"`
 
 ##### On client Config file add below option ##### 
 ` auth-user-pass `
 ##### Also disable this option: #####
-` block-outside-dns `
+`#ignore-unknown-option block-outside-dns`
 #### but keep below line ####
-` ignore-unknown-option block-outside-dns`
+` block-outside-dns `
 
 ```
 systemctl enable openvpn-server@server.service

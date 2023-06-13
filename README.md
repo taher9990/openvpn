@@ -49,8 +49,9 @@ plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so logi
 
 ##### To avoid DNS resolutions issues#####
 ##### On Server Config file Add below options #####
-```push "dhcp-option DNS 1.1.1.1"
-push "block-outside-dns"```
+
+`push "dhcp-option DNS 1.1.1.1"`  &  
+`push "block-outside-dns"`
 
 ##### On client Config file add below option ##### 
 ` auth-user-pass `

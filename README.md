@@ -63,6 +63,7 @@ plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so logi
 ```
 systemctl enable openvpn-server@server.service
 systemctl status openvpn-server@server.service
+service openvpn@server restart
 #systemctl start openvpn-server@server.service
 #systemctl restart openvpn-server@server.service
 ```
@@ -76,7 +77,8 @@ sudo systemctl status openvpn@server
 #### To know which command should be used, you need to know the service daemon location####
 ```
 netstat -paunt | grep openvpn
-Then search by the process Id
+ps ffaux | grep openvpn
+or search by the process Id
 ps -aux | grep 1148
 You will find the daemon "--daemon"  then look for " --cd" to see where is the path"
 ```

@@ -53,6 +53,10 @@ plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so logi
 `push "dhcp-option DNS 1.1.1.1"`  &  
 `push "block-outside-dns"`
 
+#### TO prevent any routes from server and only specific routes allowed#####
+route 10.6.0.0 255.255.255.0
+route-nopull
+
 ##### On client Config file add below option ##### 
 ` auth-user-pass `
 ##### Also disable this option: #####

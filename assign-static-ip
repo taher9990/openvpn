@@ -17,7 +17,7 @@ Client profile is here
 /root/user1.ovpn
 
 2- Create User with the same profile name:
-useradd -m -p pass1 user1
+useradd -p $(openssl passwd -1 pass1 ) user1
 
 3- Create "ccd" directory under openvpn server directory:
 Make new directory 

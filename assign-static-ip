@@ -1,0 +1,37 @@
+1- Create new Profile for specific User.
+2- Create User with the same profile name.
+3- Create "ccd" directory under openvpn server directory.
+4- Add the configurations required under the "ccd" folder.
+5- Add the configurations required inside openvpn server config file.
+
+Below is the details:
+===============
+1- Create new Profile for specific User:
+Find the openvpn installer file and run it
+find / -name "openvpn-install.sh"
+cd /opt/tmp/
+./openvpn-install.sh
+Then select add new profile and then type the name "user1"
+
+Client profile is here 
+/root/user1.ovpn
+
+2- Create User with the same profile name:
+useradd -m -p pass1 user1
+
+3- Create "ccd" directory under openvpn server directory:
+Make new directory 
+mkdir /etc/openvpn/ccd
+
+4- Add the configurations required under the "ccd" folder:
+echo "ifconfig-push 10.8.0.10 255.255.255.0" > /etc/openvpn/ccd/user1
+
+
+5- Add the configurations required inside openvpn server config file:
+
+In server config 
+vi /etc/openvpn/server.config
+
+add below line 
+client-config-dir /etc/openvpn/ccd
+

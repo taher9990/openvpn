@@ -1,0 +1,32 @@
+
+sudo chmod 600 /etc/openvpn/auth/radiusplugin.cnf
+sudo chown root:root /etc/openvpn/auth/radiusplugin.cnf
+
+
+sudo chmod 755 /usr/lib/openvpn/radiusplugin.so
+sudo chown root:root /usr/lib/openvpn/radiusplugin.so
+
+sudo chmod 644 /var/log/openvpn.log
+sudo chown root:root /var/log/openvpn.log
+
+sudo chmod 700 /etc/openvpn/server/ccd
+sudo chown root:root /etc/openvpn/server/ccd
+
+
+sudo chmod 600 /etc/openvpn/tc.key
+sudo chown root:root /etc/openvpn/tc.key
+
+sudo chmod 644 /etc/openvpn/dh.pem
+sudo chown root:root /etc/openvpn/dh.pem
+
+sudo chmod 644 /etc/openvpn/ca.crt
+sudo chown root:root /etc/openvpn/ca.crt
+
+sudo chmod 644 /etc/openvpn/server.crt
+sudo chown root:root /etc/openvpn/server.crt
+
+sudo chmod 600 /etc/openvpn/server.key
+sudo chown root:root /etc/openvpn/server.key
+
+sudo chmod 644 /etc/openvpn/server.conf
+sudo chown root:root /etc/openvpn/server.conf

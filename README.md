@@ -122,3 +122,29 @@ iptables-save > /etc/iptables/rules.v4
 ##### 2- Deploy OpenVPN in Two Arm Mode: #####
 
 ![OpenVPN Connectivity Scenarios-OpenVPN-TwoArmMode drawio](https://user-images.githubusercontent.com/3184045/182100229-02411079-f588-41f3-92de-df217280dc86.png)
+
+
+
+###### Troubleshooting dual profiles ###### 
+```
+sudo netstat -plnt | grep 119
+
+
+root@PRD-JUMPHOST:/etc/openvpn# netstat -tulpn | grep 119
+udp        0      0 207.180.213.184:1194    0.0.0.0:*                           20181/openvpn
+udp        0      0 207.180.213.184:1195    0.0.0.0:*                           796/openvpn
+
+
+
+sudo chmod 755 /etc/openvpn/ccd
+sudo chmod 644 /etc/openvpn/ccd/dev
+
+
+
+sudo chmod 777 /etc/openvpn/ccd
+sudo chmod 777 /etc/openvpn/ccd/dev
+sudo chmod 777 /etc/openvpn/ccd/ChangeMe
+
+
+tail -f /var/log/openvpnserver-1194.log | grep -i "ccd\|ifconfig-push\|devuser"
+````
